@@ -39,24 +39,6 @@ class GreenTopPage extends StatelessWidget {
                 );
               },
             ),
-            TextButton(
-              child: Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.white,
-                  child: const Text(
-                    'FullScreen Page',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                    ),
-                  )),
-              onPressed: () {
-                pushNewScreen<dynamic>(
-                  context,
-                  screen: const GreenDetailPage(),
-                );
-              },
-            ),
           ]),
         ));
   }

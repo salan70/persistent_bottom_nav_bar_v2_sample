@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:persistent_bottom_nav_bar_v2_s/blue_page/blue_detail_page.dart';
+import 'package:persistent_bottom_nav_bar_v2_s/fulscreen_page.dart';
 
 class BlueTopPage extends StatelessWidget {
   const BlueTopPage({Key? key}) : super(key: key);
@@ -53,7 +54,9 @@ class BlueTopPage extends StatelessWidget {
               onPressed: () {
                 pushNewScreen<dynamic>(
                   context,
-                  screen: const BlueDetailPage(),
+                  screen: const FullscreenPage(),
+                  withNavBar: false,
+                  pageTransitionAnimation: PageTransitionAnimation.slideUp,
                 );
               },
             ),

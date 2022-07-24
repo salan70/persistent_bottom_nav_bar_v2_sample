@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
+import 'package:persistent_bottom_nav_bar_v2_s/fulscreen_page.dart';
 import 'package:persistent_bottom_nav_bar_v2_s/red_page/red_detail_page.dart';
 
 class RedTopPage extends StatelessWidget {
@@ -53,7 +54,8 @@ class RedTopPage extends StatelessWidget {
               onPressed: () {
                 pushNewScreen<dynamic>(
                   context,
-                  screen: const RedDetailPage(),
+                  screen: const FullscreenPage(),
+                  withNavBar: false,
                 );
               },
             ),
