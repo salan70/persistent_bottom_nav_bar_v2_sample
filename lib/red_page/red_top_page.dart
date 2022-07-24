@@ -34,10 +34,17 @@ class RedTopPage extends StatelessWidget {
                     ),
                   )),
               onPressed: () {
-                pushNewScreen<dynamic>(
+                Navigator.push<MaterialPageRoute<dynamic>>(
                   context,
-                  screen: const RedDetailPage(),
+                  MaterialPageRoute(
+                    builder: (context) => const RedDetailPage(),
+                  ),
                 );
+                // ↓でも可
+                // pushNewScreen<dynamic>(
+                //   context,
+                //   screen: const RedDetailPage(),
+                // );
               },
             ),
             TextButton(

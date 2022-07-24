@@ -33,9 +33,11 @@ class GreenTopPage extends StatelessWidget {
                     ),
                   )),
               onPressed: () {
-                pushNewScreen<dynamic>(
+                Navigator.push<MaterialPageRoute<dynamic>>(
                   context,
-                  screen: const GreenDetailPage(),
+                  MaterialPageRoute(
+                    builder: (context) => const GreenDetailPage(),
+                  ),
                 );
               },
             ),
